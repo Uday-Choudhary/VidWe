@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watch Together</title>
+    <title>VidWe - Watch Together</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Online Together Watching</h1>
-    <iframe 
-    src="https://drive.google.com/file/d/1jMhf4LFTDtJLCu12QJzh5qhGfZY-LIFm/preview" 
-    width="700" 
-    height="400" 
-    allow="autoplay">
-</iframe>
+    <div class="container">
+        <h1>🎬 VidWe - Watch Movies Together</h1>
+        <p>Sync & watch movies in real-time with your friends!</p>
 
-    
-    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+        <iframe src="https://drive.google.com/file/d/1jMhf4LFTDtJLCu12QJzh5qhGfZY-LIFm/preview" allow="autoplay"></iframe>
+
+        <div>
+            <button onclick="playVideo()">▶ Play</button>
+            <button onclick="pauseVideo()">⏸ Pause</button>
+        </div>
+        
+        <p class="footer">Made with ❤️ by Uday</p>
+    </div>
+
     <script src="script.js"></script>
-    
 </body>
 </html>
